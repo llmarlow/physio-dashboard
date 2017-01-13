@@ -32,6 +32,8 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem "font-awesome-rails"
 gem 'simple_form'
 gem 'faker'
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

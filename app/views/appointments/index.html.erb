@@ -32,5 +32,5 @@
 </div>
 
 <br>
-
+<%= will_paginate @appointments, renderer: BootstrapPagination::Rails %>
 <%= link_to 'New Appointment', new_appointment_path %>

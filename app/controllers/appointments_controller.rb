@@ -4,7 +4,7 @@ class AppointmentsController < ApplicationController
   # GET /appointments
   # GET /appointments.json
   def index
-    @appointments = Appointment.this_week
+    @appointments = Appointment.order(:start_time).paginate(:page => params[:page], :per_page => 30)
   end
 
   # GET /appointments/1
