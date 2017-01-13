@@ -3,68 +3,64 @@
   <div id="page-wrapper">
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">Dashboard</h1>
+        <h1 class="page-header">Overview</h1>
       </div>
-    <!-- /.col-lg-12 -->
     </div>
-    <!-- /.row -->
     <div class="row">
       <div class="col-lg-3 col-md-6">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-3">
-                <i class="fa fa-users fa-5x"></i>
-              </div>
-              <div class="col-xs-9 text-right">
-                <div class="huge">
-                  <%= @new_patients %>
-                </div>
-                <div>New Patients!</div>
-              </div>
-            </div>
-          </div>
-          <a href="#">
-            <div class="panel-footer">
-              <span class="pull-left">View Details</span>
-              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-              <div class="clearfix"></div>
-            </div>
-          </a>
-        </div>
+        <%= render 'dashboards/overview/new_patients' %>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="panel panel-green">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-3">
-                <i class="fa fa-tasks fa-5x"></i>
-              </div>
-              <div class="col-xs-9 text-right">
-                <div class="huge">12</div>
-                <div>New Tasks!</div>
-              </div>
-            </div>
-          </div>
-          <a href="#">
-            <div class="panel-footer">
-              <span class="pull-left">View Details</span>
-              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-              <div class="clearfix"></div>
-            </div>
-          </a>
-        </div>
+        <%= render 'dashboards/overview/average_patients' %>
       </div>
       <div class="col-lg-3 col-md-6">
-          <div class="panel panel-yellow">
+        <%= render 'dashboards/overview/patients_on_books' %>
+      </div>
+      <div class="col-lg-3 col-md-6">
+          <%= render 'dashboards/overview/weekly_patients' %>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Luke</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <%= render 'dashboards/luke/dna' %>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <%= render 'dashboards/luke/cancellations' %>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <%= render 'dashboards/luke/retention' %>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <%= render 'dashboards/luke/finished' %>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Lorna</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <%= render 'dashboards/lorna/visits' %>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <%= render 'dashboards/lorna/ranking' %>
+      </div>
+      <div class="col-lg-3 col-md-6">
+          <div class="panel panel-green">
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-3">
-                  <i class="fa fa-shopping-cart fa-5x"></i>
+                  <i class="fa fa-address-book-o fa-5x"></i>
                 </div>
                 <div class="col-xs-9 text-right">
-                  <div class="huge">124</div>
-                  <div>New Orders!</div>
+                  <div class="huge"><%= @patients_on_books %></div>
+                  <div>Retention!</div>
                 </div>
               </div>
             </div>
@@ -78,15 +74,15 @@
           </div>
       </div>
       <div class="col-lg-3 col-md-6">
-          <div class="panel panel-red">
+          <div class="panel panel-primary">
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-3">
-                    <i class="fa fa-support fa-5x"></i>
+                    <i class="fa fa-gbp fa-5x"></i>
                   </div>
                   <div class="col-xs-9 text-right">
                     <div class="huge">13</div>
-                    <div>Support Tickets!</div>
+                    <div>Finished!</div>
                   </div>
                 </div>
               </div>

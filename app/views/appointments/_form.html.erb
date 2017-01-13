@@ -1,0 +1,13 @@
+<%= simple_form_for(@appointment) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :patient %>
+    <%= f.input :start_time, :minute_step => 15 , start_hour: 8, end_hour: 20  %>
+    <%= f.input :end_time, :minute_step => 15 , start_hour: 8, end_hour: 20 %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
