@@ -1,102 +1,95 @@
-<%= render 'layouts/header' %>
-<div id="wrapper">
-  <div id="page-wrapper">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="page-header">Overview</h1>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Overview</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/overview/new_patients' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/overview/average_patients' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/overview/patients_on_books' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+      <%= render 'dashboards/overview/weekly_patients' %>
+  </div>
+</div> 
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Luke</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/luke/dna' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/luke/cancellations' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/luke/retention' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/luke/finished' %>
+  </div>
+</div> 
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Lorna</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/lorna/visits' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <%= render 'dashboards/lorna/ranking' %>
+  </div>
+  <div class="col-lg-3 col-md-6">
+      <div class="panel panel-green">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-3">
+              <i class="fa fa-address-book-o fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div class="huge"><%= @patients_on_books %></div>
+              <div>Retention!</div>
+            </div>
+          </div>
+        </div>
+        <a href="#">
+          <div class="panel-footer">
+            <span class="pull-left">View Details</span>
+            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+          <div class="clearfix"></div>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/overview/new_patients' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/overview/average_patients' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/overview/patients_on_books' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <%= render 'dashboards/overview/weekly_patients' %>
-      </div>
-    </div> 
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="page-header">Luke</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/luke/dna' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/luke/cancellations' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/luke/retention' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/luke/finished' %>
-      </div>
-    </div> 
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="page-header">Lorna</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/lorna/visits' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <%= render 'dashboards/lorna/ranking' %>
-      </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="panel panel-green">
-            <div class="panel-heading">
-              <div class="row">
-                <div class="col-xs-3">
-                  <i class="fa fa-address-book-o fa-5x"></i>
-                </div>
-                <div class="col-xs-9 text-right">
-                  <div class="huge"><%= @patients_on_books %></div>
-                  <div>Retention!</div>
-                </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-gbp fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge">13</div>
+                <div>Finished!</div>
               </div>
             </div>
-            <a href="#">
-              <div class="panel-footer">
-                <span class="pull-left">View Details</span>
-                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+          </div>
+          <a href="#">
+            <div class="panel-footer">
+              <span class="pull-left">View Details</span>
+              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
               <div class="clearfix"></div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
       </div>
-      <div class="col-lg-3 col-md-6">
-          <div class="panel panel-primary">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-gbp fa-5x"></i>
-                  </div>
-                  <div class="col-xs-9 text-right">
-                    <div class="huge">13</div>
-                    <div>Finished!</div>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer">
-                  <span class="pull-left">View Details</span>
-                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                  <div class="clearfix"></div>
-                </div>
-              </a>
-          </div>
-      </div>
-    </div> 
   </div>
-  <!-- /#page-wrapper -->
-</div>
-<!-- /#wrapper -->
+</div> 

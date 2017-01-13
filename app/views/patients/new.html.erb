@@ -1,5 +1,13 @@
-<h1>New Patient</h1>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">New Patient <%= link_to 'Back', patients_path, class: "pull-right btn btn-default" %></h1>
 
-<%= render 'form', patient: @patient %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <%= render 'form', patient: @patient %>
+  </div>
+</div>
 
-<%= link_to 'Back', patients_path %>
+    

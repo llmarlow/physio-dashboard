@@ -8,6 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= yield %>
+  <%= render 'layouts/header' %>
+  <div id="wrapper">
+    <div id="page-wrapper">
+      <%= yield %>
+    </div>
+  </div>
   </body>
 </html>
